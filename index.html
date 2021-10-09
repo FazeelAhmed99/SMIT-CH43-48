@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 43-48</title>
+    <script src="app.js"></script>
+    <style>
+        .dark-souls {
+            width: 30%;
+            height: 300px;
+        }
+
+        .tsk4-div img {
+            width: 20%;
+        }
+
+        .counter {
+            border: 1px solid rgb(182, 182, 182);
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .count-btn {
+            border: none;
+            border: 2px solid rgb(100, 100, 100);
+            color: wheat;
+            background-color: rgb(121, 121, 121);
+            cursor: pointer;
+            margin: 0px 15px;
+            font-size: 2rem;
+        }
+
+        #count {
+            padding: 0.5rem 1rem;
+            border: 1px solid rgb(151, 151, 151);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Link Alert Task</h1>
+
+    <h2><a href="" onclick="linkAlert()">Click Here</a></h2>
+
+    <h1 style="text-align: center;">Image Alert Task</h1>
+    <div>
+        <img onclick="imageAlert()" src="https://i.ytimg.com/vi/cuLsNIsM_S0/maxresdefault.jpg" alt="Image not found"
+            class="dark-souls">
+        <img onclick="imageAlert()"
+            src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/xlarge/public/field/image/2021/03/elana-squalid-queen-pic.jpg"
+            alt="Image not found" class="dark-souls">
+        <img onclick="imageAlert()" src="https://i.redd.it/cpsl355n2on21.jpg" alt="Image not found" class="dark-souls">
+    </div>
+
+    <h1 style="text-align: center;">Delete Function Task</h1>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>University</th>
+            <th>Roll No</th>
+        </tr>
+        <tr class="list">
+            <td>Fazeel</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/35</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr class="list">
+            <td>Sharjeel</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/72</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr class="list">
+            <td>Ahson</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/11</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Talha</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/73</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Osama</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/62</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Shahrukh</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/105</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Asad</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/127</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Haris</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/40</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Fareed</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/33</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+        <tr>
+            <td>Farhan</td>
+            <td>Sindh</td>
+            <td>2k19/SWE/32</td>
+            <td><button onclick="deleteRow()" class="del">Delete</button></td>
+        </tr>
+    </table>
+
+
+    <h1 style="text-align: center;">MouseOver Task</h1>
+    <div class="tsk4-div">
+        <img src="firekeeper.jpg" onmouseover="this.src='gwyn.jpg'" onmouseout="this.src='firekeeper.jpg'">
+    </div>
+
+    <h1 style="text-align: center;">Counter Task</h1>
+
+    <div class="counter">
+        <button onclick="decrement()" class="count-btn">-</button>
+        <h2 id="count">0</h2>
+        <button onclick="increment()" class="count-btn">+</button>
+    </div>
+</body>
+
+</html>
